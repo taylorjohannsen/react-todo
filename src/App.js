@@ -20,19 +20,19 @@ class Main extends Component {
       {
         id: uuid.v4(),
         title: 'Wash Dishes',
-        duedate: '2018-12-18',
+        duedate: '2017-04-02',
         priority: false,
       },
       {
         id: uuid.v4(),
-        title: 'Book Title',
+        title: 'Learn React.js',
         duedate: '2018-12-18',
         priority: true,
       },
       {
         id: uuid.v4(),
         title: 'Feed Cat',
-        duedate: '2018-12-18',
+        duedate: '2019-06-28',
         priority: false,
       },
     ]});

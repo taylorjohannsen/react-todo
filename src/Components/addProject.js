@@ -29,19 +29,19 @@ class AddProject extends Component {
   render() {
     return (
       <div>
-        <h3>Add New Todo:</h3>
-          <form onSubmit={this.handleSubmit.bind(this)}>
+        <h3>Add New Todo</h3>
+          <form className="submitForm" onSubmit={this.handleSubmit.bind(this)}>
             <div>
-              <label>Title</label><br></br>
-              <input type="text" ref="title" required/>
+              <label className="pad">Title</label>
+              <input className="padBox" type="text" ref="title" required/>
               <br></br>
-              <label>Due Date</label><br></br>
-              <input type="date" ref="duedate" required/>
+              <label className="pad">Due Date</label>
+              <input className="padBox" type="date" ref="duedate" required/>
               <br></br>
-              <label>Important</label><br></br>
-              <input type="checkbox" ref="priority"/>
+              <label className="pad">Important</label>
+              <input className="pad" type="checkbox" ref="priority"/>
             </div>
-            <input type="Submit" placeholder="Submit" />
+            <input className="submit" type="Submit" placeholder="Submit" />
           </form>
       </div>
     );

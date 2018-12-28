@@ -11,14 +11,14 @@ class Todo extends Component {
     let priority;
 
     if(this.props.project.priority === true) {
-      priority = '☆';
+      priority = 'Important';
     }
     return (
       <div className="todoBox">
-        <strong className='padRight'>{this.props.project.title}</strong>
-        <div className='padRight'>{this.props.project.duedate}</div>
+        <strong className='padRightTitle'>{this.props.project.title}</strong>
+        <div className='padRight'>due: {this.props.project.duedate}</div>
+        <button className='padRightSub' onClick={this.deleteTodo.bind(this, this.props.project.id)}>Delete</button>
         <div className="smallStar">{priority}</div>
-        <button className='padRight' onClick={this.deleteTodo.bind(this, this.props.project.id)}>Delete</button>
       </div>
     );
   }
