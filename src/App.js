@@ -54,19 +54,6 @@ class Main extends Component {
   render() {
     return (
       <div>
-        <form className="displayForm">
-            <div>
-              <h3>Edit Todo:</h3><br></br>
-              <label>Title</label><br></br>
-              <input type="text" ref="title" required/>
-              <br></br>
-              <label>Due Date</label><br></br>
-              <input type="date" ref="duedate" required/>
-              <br></br>
-              <input type="checkbox" ref="priority"/>
-              <label>Important</label>
-            </div>
-          </form>
         <div className="fRight">
           <AddProject addProject={this.handleProject.bind(this)} />
         </div> 
